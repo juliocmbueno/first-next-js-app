@@ -19,7 +19,7 @@ export class ViaCepService {
     private static instance:ViaCepService;
 
     public get(cep:string):Promise<ViaCep>{
-        return axios.get<ViaCep, any>(`http://viacep.com.br/ws/${cep}/json/`)
+        return axios.get<ViaCep, any>(`https://viacep.com.br/ws/${cep}/json/`)
             .then(resposta => resposta.data)
             .catch((error) => {
                 AppToastService.sendWarnMessage(`Não foi possível buscar o cep: ${cep}`);
