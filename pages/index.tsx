@@ -9,7 +9,7 @@ export default class Home extends React.Component<any, any> {
 
     render() {
         return (
-            <div>Hello word</div>
+            <div>Hello word!!!</div>
         );
     }
 }
